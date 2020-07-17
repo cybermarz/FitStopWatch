@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivsplash"
+            android:layout_width="380dp"
+            android:layout_height="390dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/main_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icget" />
+
+        <TextView
+
+            android:id="@+id/tvheader1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/healthy_on_you"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivsplash"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:id="@+id/tvheader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:lineSpacingExtra="15dp"
+            android:text="@string/key_of_happiness_is_not_a_n_life_for_money"
+            android:textAlignment="center"
+            android:textColor="#A3A2AD"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvheader1"
+            android:fontFamily="@font/light"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/get_started"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvheader2"
+            android:background="@drawable/btngreen"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/medium"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
